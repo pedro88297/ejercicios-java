@@ -40,5 +40,23 @@ public class ejercicio2 {
 
         System.out.println("Mayores de edad: " + mayores);
         System.out.println("Menores de edad: " + menores);
+
+        int r1 = 0, r2 = 0, r3 = 0, r4 = 0;
+
+        for (int e : edades) {
+            if (e <= 17)
+                r1++;
+            else if (e <= 30)
+                r2++;
+            else if (e <= 50)
+                r3++;
+            else
+                r4++;
+        }
+
+        System.out.println("0-17: " + r1);
+        System.out.println("18-30: " + r2);
+        System.out.println("31-50: " + r3);
+        System.out.println("51+: " + r4);
     }
 }
