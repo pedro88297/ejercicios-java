@@ -36,6 +36,12 @@ public class ejercicio3 {
 
         double media = (double) suma / numerosAleatorios.length;
         System.out.println("Media: " + media);
+
+        for (int n : numerosAleatorios) {
+            if (n > media) {
+                System.out.print(n + " ");
+            }
+        }
     }
 
 }
