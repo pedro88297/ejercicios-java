@@ -29,6 +29,13 @@ public class ejercicio3 {
                 System.out.print(numerosAleatorios[i] + " ");
             }
         }
+
+        int suma = 0;
+        for (int n : numerosAleatorios)
+            suma += n;
+
+        double media = (double) suma / numerosAleatorios.length;
+        System.out.println("Media: " + media);
     }
 
 }
