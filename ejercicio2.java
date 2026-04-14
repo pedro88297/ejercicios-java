@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ejercicio2 {
@@ -47,5 +48,12 @@ public class ejercicio2 {
 
         double media = (double) suma / edades.length;
         System.out.println("Media: " + media);
+
+        Arrays.sort(edades);
+
+        System.out.println("Ordenadas:");
+        for (int e : edades) {
+            System.out.print(e + " ");
+        }
     }
 }
