@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ejercicio1 {
@@ -57,6 +58,22 @@ public class ejercicio1 {
             }
 
             System.out.println(numeros[i] + " aparece " + contador + " veces");
+        }
+
+        System.out.print("Número a eliminar: ");
+        int eliminar = sc.nextInt();
+
+        ArrayList<Integer> lista = new ArrayList<>();
+
+        for (int num : numeros) {
+            if (num != eliminar) {
+                lista.add(num);
+            }
+        }
+
+        System.out.println("Resultado:");
+        for (int num : lista) {
+            System.out.print(num + " ");
         }
     }
 
