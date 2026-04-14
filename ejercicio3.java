@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class ejercicio3 {
@@ -12,6 +13,13 @@ public class ejercicio3 {
         System.out.println("Array:");
         for (int n : numerosAleatorios) {
             System.out.print(n + " ");
+        }
+
+        Arrays.sort(numerosAleatorios);
+
+        System.out.println("\nArray ordenado (mayor a menor):");
+        for (int i = numerosAleatorios.length - 1; i >= 0; i--) {
+            System.out.print(numerosAleatorios[i] + " ");
         }
     }
 
