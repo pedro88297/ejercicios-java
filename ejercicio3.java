@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class ejercicio3 {
     public static void main(String[] args) {
         Random rand = new Random();
+        Scanner sc = new Scanner(System.in);
         int[] numerosAleatorios = new int[10];
 
         for (int i = 0; i < 10; i++) {
@@ -39,6 +41,23 @@ public class ejercicio3 {
                 pares.add(n);
             else
                 impares.add(n);
+        }
+
+        System.out.print("Número a buscar: ");
+        int buscar = sc.nextInt();
+
+        boolean encontrado = false;
+
+        for (int i = 0; i < numerosAleatorios.length; i++) {
+            if (numerosAleatorios[i] == buscar) {
+                System.out.println("Encontrado en posición: " + i);
+                encontrado = true;
+                break;
+            }
+        }
+
+        if (!encontrado) {
+            System.out.println("No existe");
         }
     }
 
