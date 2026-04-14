@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ejercicio1 {
@@ -56,7 +57,12 @@ public class ejercicio1 {
             System.out.print("Número " + (i + 1) + ": ");
             numeros1[i] = sc.nextInt();
         }
+        Arrays.sort(numeros);
 
+        System.out.println("Ordenados:");
+        for (int num : numeros) {
+            System.out.print(num + " ");
+        }
     }
 
 }
