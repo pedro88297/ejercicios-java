@@ -58,5 +58,16 @@ public class ejercicio2 {
         System.out.println("18-30: " + r2);
         System.out.println("31-50: " + r3);
         System.out.println("51+: " + r4);
+
+        boolean todosMayores = true;
+
+        for (int e : edades) {
+            if (e < 18) {
+                todosMayores = false;
+                break;
+            }
+        }
+
+        System.out.println("¿Todos mayores?: " + todosMayores);
     }
 }
