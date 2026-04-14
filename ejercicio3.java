@@ -21,6 +21,14 @@ public class ejercicio3 {
         for (int i = numerosAleatorios.length - 1; i >= 0; i--) {
             System.out.print(numerosAleatorios[i] + " ");
         }
+
+        System.out.println("\nNúmeros pares:");
+
+        for (int i = numerosAleatorios.length - 1; i >= 0; i--) {
+            if (numerosAleatorios[i] % 2 == 0) {
+                System.out.print(numerosAleatorios[i] + " ");
+            }
+        }
     }
 
 }
