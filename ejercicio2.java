@@ -27,5 +27,18 @@ public class ejercicio2 {
 
         System.out.println("\nEdad mínima: " + min);
         System.out.println("Edad máxima: " + max);
+
+        int mayores = 0;
+        int menores = 0;
+
+        for (int e : edades) {
+            if (e >= 18)
+                mayores++;
+            else
+                menores++;
+        }
+
+        System.out.println("Mayores de edad: " + mayores);
+        System.out.println("Menores de edad: " + menores);
     }
 }
