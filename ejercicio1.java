@@ -46,6 +46,17 @@ public class ejercicio1 {
         System.out.println("Menor: " + menor);
         System.out.println("Positivos: " + positivos);
         System.out.println("Negativos: " + negativos);
+
+        System.out.print("¿Cuántos números quieres introducir?: ");
+        int n = sc.nextInt();
+
+        int[] numeros1 = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            numeros1[i] = sc.nextInt();
+        }
+
     }
 
 }
