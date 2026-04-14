@@ -46,6 +46,18 @@ public class ejercicio1 {
         System.out.println("Menor: " + menor);
         System.out.println("Positivos: " + positivos);
         System.out.println("Negativos: " + negativos);
+
+        for (int i = 0; i < numeros.length; i++) {
+            int contador = 0;
+
+            for (int j = 0; j < numeros.length; j++) {
+                if (numeros[i] == numeros[j]) {
+                    contador++;
+                }
+            }
+
+            System.out.println(numeros[i] + " aparece " + contador + " veces");
+        }
     }
 
 }
