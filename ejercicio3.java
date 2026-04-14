@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -28,6 +29,16 @@ public class ejercicio3 {
             if (numerosAleatorios[i] % 2 == 0) {
                 System.out.print(numerosAleatorios[i] + " ");
             }
+        }
+
+        ArrayList<Integer> pares = new ArrayList<>();
+        ArrayList<Integer> impares = new ArrayList<>();
+
+        for (int n : numerosAleatorios) {
+            if (n % 2 == 0)
+                pares.add(n);
+            else
+                impares.add(n);
         }
     }
 
